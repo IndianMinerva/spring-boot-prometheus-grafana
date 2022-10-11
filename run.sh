@@ -1,0 +1,1 @@
+mvn clean package -DskipTests=true && docker build -t spring-boot-prometheus-grafana.jar:latest . && docker-compose -f docker/docker-compose.yml up
